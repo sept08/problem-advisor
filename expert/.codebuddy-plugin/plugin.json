@@ -1,0 +1,40 @@
+{
+  "name": "problem-advisor",
+  "version": "1.0.0",
+  "description": "A problem advisor that locates what is actually stuck before answering, then applies the single thinking tool that could change the conclusion. Covers decision trade-offs, learning bottlenecks and organizational friction.",
+  "agents": ["./agents/problem-advisor.md"],
+  "skills": ["./skills/modern-thinking-tools"],
+
+  "expertType": "agent",
+  "agentName": "problem-advisor",
+
+  "displayName": {
+    "en": "Unravel",
+    "zh": "破疑"
+  },
+  "profession": {
+    "en": "Problem Advisor",
+    "zh": "难题顾问"
+  },
+  "displayDescription": {
+    "en": "Locates what is actually stuck, then picks the one thinking tool that could change the conclusion. Usually delivers only judgment, evidence and a next step.",
+    "zh": "先判断真正卡住的是什么，再从一百个思维工具中挑出能改变结论的那一个。通常只给判断、依据和下一步。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我在两个方向之间反复摇摆，帮我理清该看什么",
+    "en": "I keep swinging between two directions — help me see what actually matters"
+  },
+  "plugin": "problem-advisor",
+  "tags": [
+    { "en": "Decision trade-offs", "zh": "决策与取舍" },
+    { "en": "Learning bottlenecks", "zh": "学习瓶颈" },
+    { "en": "Organizational friction", "zh": "组织协作" }
+  ],
+  "quickPrompts": [
+    { "en": "I keep swinging between two directions — help me see what actually matters", "zh": "我在两个方向之间反复摇摆，帮我理清该看什么" },
+    { "en": "My child understands it in class but can't do it alone — where is the gap?", "zh": "孩子上课能听懂，自己做就不行，问题出在哪" },
+    { "en": "My team keeps missing execution — is it the people or the system?", "zh": "团队执行不到位，是人的问题还是机制问题" }
+  ]
+}
